@@ -60,7 +60,25 @@ const Navbar = () => {
             ? "scale-100 opacity-100 translate-y-0"
             : "scale-95 opacity-0 -translate-y-2"
         )}>
-          {/* Logo removed */}
+          <a
+            href="#"
+            className="flex items-center space-x-2 group"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToTop();
+            }}
+            aria-label="Atlantiz AI"
+          >
+            {/* Enhanced logo text styling with advanced animations */}
+            <span className={cn(
+              "font-display font-bold text-base lg:text-lg bg-gradient-to-r from-orange-600 via-red-600 to-orange-700 bg-clip-text text-transparent group-hover:from-orange-700 group-hover:via-red-700 group-hover:to-orange-800 transition-all duration-500 drop-shadow-sm tracking-wide animate-text-shimmer transform",
+              isLoaded
+                ? "translate-x-0 opacity-100"
+                : "-translate-x-8 opacity-0"
+            )}>
+              Atlantiz AI
+            </span>
+          </a>
 
           {/* Enhanced Desktop Navigation with staggered animations */}
           <nav className="hidden lg:flex items-center space-x-1">
