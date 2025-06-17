@@ -12,7 +12,7 @@ const AICapabilitiesSection = () => {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-pulse-100/30 to-transparent animate-float"></div>
       
       <div className="container px-4 sm:px-6 lg:px-8 mx-auto relative z-10">
-        <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 animate-on-scroll pt-4">
+        <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 animate-on-scroll pt-12 sm:pt-16 md:pt-20">
           <h2 className="text-3xl sm:text-4xl font-display font-bold tracking-tight mb-3 sm:mb-4 bg-gradient-to-r from-gray-900 via-pulse-600 to-gray-900 bg-clip-text text-transparent animate-text-shimmer">
             Experience the Future of Productivity
           </h2>
