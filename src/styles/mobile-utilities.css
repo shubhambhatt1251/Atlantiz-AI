@@ -1,0 +1,406 @@
+/**
+ * ATLANTIZ AI - Mobile Utility Classes
+ * 🎨 Designed by: Shubham | 👨‍💻 Developed by: Shubham
+ * © 2025 Atlantiz AI - All Rights Reserved
+ * 
+ * Additional utility classes for mobile optimization
+ * These work alongside existing Tailwind classes
+ */
+
+/* ===== RESPONSIVE UTILITY CLASSES ===== */
+
+/* Mobile-first responsive utilities */
+.mobile-only {
+  display: none;
+}
+
+.tablet-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block !important;
+  }
+  
+  .mobile-hidden {
+    display: none !important;
+  }
+  
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet-only {
+    display: block !important;
+  }
+  
+  .tablet-hidden {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-only,
+  .tablet-only {
+    display: none !important;
+  }
+  
+  .desktop-hidden {
+    display: none !important;
+  }
+}
+
+/* ===== MOBILE LAYOUT UTILITIES ===== */
+
+/* Mobile stack utilities */
+.mobile-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .mobile-stack {
+    flex-direction: row;
+  }
+}
+
+/* Mobile full width */
+.mobile-full {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .mobile-full {
+    width: auto;
+  }
+}
+
+/* Mobile center */
+.mobile-center {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .mobile-center {
+    text-align: left;
+  }
+}
+
+/* ===== TOUCH-FRIENDLY UTILITIES ===== */
+
+/* Touch target sizing */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Touch feedback */
+.touch-feedback {
+  -webkit-tap-highlight-color: rgba(249, 115, 22, 0.1);
+  touch-action: manipulation;
+}
+
+/* Disable text selection on interactive elements */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ===== MOBILE SPACING UTILITIES ===== */
+
+/* Mobile padding utilities */
+.mobile-p-4 {
+  padding: 1rem;
+}
+
+.mobile-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mobile-py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mobile-p-6 {
+  padding: 1.5rem;
+}
+
+.mobile-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.mobile-py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Mobile margin utilities */
+.mobile-m-4 {
+  margin: 1rem;
+}
+
+.mobile-mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mobile-my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mobile-m-6 {
+  margin: 1.5rem;
+}
+
+.mobile-mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mobile-my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== MOBILE TYPOGRAPHY UTILITIES ===== */
+
+/* Mobile text sizes */
+.mobile-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.mobile-text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.mobile-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.mobile-text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.mobile-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.mobile-text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+/* Mobile line heights */
+.mobile-leading-tight {
+  line-height: 1.25;
+}
+
+.mobile-leading-normal {
+  line-height: 1.5;
+}
+
+.mobile-leading-relaxed {
+  line-height: 1.625;
+}
+
+/* ===== MOBILE GRID UTILITIES ===== */
+
+/* Mobile grid layouts */
+.mobile-grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.mobile-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .mobile-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.tablet-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .tablet-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.tablet-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .tablet-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tablet-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== MOBILE FORM UTILITIES ===== */
+
+/* Mobile form layouts */
+.mobile-form-stack .grid {
+  grid-template-columns: 1fr !important;
+  gap: 1rem !important;
+}
+
+/* Mobile input styling */
+.mobile-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 16px; /* Prevents iOS zoom */
+  border-radius: 0.75rem;
+  border: 2px solid #e5e7eb;
+  transition: border-color 0.2s ease;
+}
+
+.mobile-input:focus {
+  outline: none;
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+/* Mobile button styling */
+.mobile-button {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(249, 115, 22, 0.1);
+}
+
+/* ===== MOBILE ANIMATION UTILITIES ===== */
+
+/* Simplified animations for mobile */
+@media (max-width: 767px) {
+  .mobile-animate-fade {
+    animation: mobile-fade 0.3s ease-out forwards;
+  }
+  
+  .mobile-animate-slide {
+    animation: mobile-slide 0.3s ease-out forwards;
+  }
+  
+  .mobile-animate-scale {
+    animation: mobile-scale 0.2s ease-out forwards;
+  }
+}
+
+@keyframes mobile-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mobile-slide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mobile-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== MOBILE PERFORMANCE UTILITIES ===== */
+
+/* GPU acceleration for mobile */
+.mobile-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Optimized transforms */
+.mobile-transform {
+  will-change: transform;
+}
+
+/* Optimized opacity */
+.mobile-opacity {
+  will-change: opacity;
+}
+
+/* ===== MOBILE ACCESSIBILITY UTILITIES ===== */
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+  .mobile-high-contrast {
+    border: 2px solid #000 !important;
+    background: white !important;
+    color: #000 !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .mobile-no-motion * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus indicators */
+.mobile-focus:focus {
+  outline: 2px solid #f97316 !important;
+  outline-offset: 2px !important;
+}

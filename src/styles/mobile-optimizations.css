@@ -1,0 +1,413 @@
+/**
+ * ATLANTIZ AI - Enhanced Mobile & Tablet Optimizations
+ * 🎨 Designed by: Shubham | 👨‍💻 Developed by: Shubham
+ * © 2025 Atlantiz AI - All Rights Reserved
+ * 
+ * Additional mobile optimizations that enhance existing responsive design
+ * WITHOUT changing any existing code, UI, or functionality
+ */
+
+/* ===== ENHANCED MOBILE BREAKPOINTS ===== */
+
+/* Extra Small Mobile (320px - 374px) */
+@media (max-width: 374px) {
+  .hero-title {
+    font-size: 1.5rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.875rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  .glass-card {
+    padding: 1rem !important;
+    margin: 0.5rem !important;
+  }
+  
+  .button-primary, .button-secondary {
+    padding: 0.625rem 1rem !important;
+    font-size: 0.8125rem !important;
+  }
+}
+
+/* Small Mobile (375px - 424px) */
+@media (min-width: 375px) and (max-width: 424px) {
+  .hero-title {
+    font-size: 1.75rem !important;
+    line-height: 1.25 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.9375rem !important;
+  }
+  
+  .feature-card {
+    padding: 1.125rem !important;
+  }
+}
+
+/* Large Mobile (425px - 767px) */
+@media (min-width: 425px) and (max-width: 767px) {
+  .hero-title {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+  
+  .section-padding {
+    padding: 2rem 1rem !important;
+  }
+}
+
+/* Tablet Portrait (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1.15 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem !important;
+  }
+  
+  .container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  
+  .glass-card {
+    padding: 2rem !important;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  .comparison-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* Tablet Landscape (1024px - 1199px) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .hero-title {
+    font-size: 3rem !important;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* ===== ENHANCED TOUCH INTERACTIONS ===== */
+
+/* Better touch targets for all interactive elements */
+@media (max-width: 1023px) {
+  button, a, input, select, textarea, [role="button"] {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    touch-action: manipulation;
+  }
+  
+  /* Enhanced button spacing for touch */
+  .button-group button:not(:last-child) {
+    margin-right: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  /* Better form controls */
+  input, select, textarea {
+    padding: 0.875rem 1rem !important;
+    font-size: 16px !important; /* Prevents iOS zoom */
+    border-radius: 0.75rem !important;
+  }
+  
+  /* Enhanced navigation touch targets */
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+    margin: 0.25rem !important;
+  }
+  
+  /* Better card interactions */
+  .feature-card, .testimonial-card, .glass-card {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(249, 115, 22, 0.1);
+  }
+}
+
+/* ===== MOBILE-SPECIFIC ANIMATIONS ===== */
+
+/* Reduced motion for mobile performance */
+@media (max-width: 767px) {
+  .animate-float,
+  .animate-pulse-glow,
+  .animate-gradient-x,
+  .parallax {
+    animation: none !important;
+    transform: none !important;
+  }
+  
+  /* Simplified hover effects for touch devices */
+  .hover-lift:hover,
+  .hover-glow:hover {
+    transform: scale(1.02) !important;
+    transition: transform 0.2s ease !important;
+  }
+  
+  /* Fast fade-in animations only */
+  .animate-fade-in {
+    animation: mobile-fade-in 0.3s ease-out forwards !important;
+  }
+}
+
+@keyframes mobile-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== MOBILE TYPOGRAPHY ENHANCEMENTS ===== */
+
+@media (max-width: 767px) {
+  /* Better text hierarchy */
+  h1, .text-4xl, .text-5xl, .text-6xl {
+    font-size: 1.875rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  h2, .text-3xl {
+    font-size: 1.5rem !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  h3, .text-2xl {
+    font-size: 1.25rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  p, .text-base {
+    font-size: 0.9375rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .text-sm {
+    font-size: 0.8125rem !important;
+  }
+  
+  .text-xs {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* ===== MOBILE LAYOUT OPTIMIZATIONS ===== */
+
+@media (max-width: 767px) {
+  /* Stack all flex layouts vertically */
+  .flex-row-mobile-stack {
+    flex-direction: column !important;
+  }
+  
+  /* Full width cards on mobile */
+  .card-mobile-full {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Better spacing */
+  .section-mobile-spacing {
+    padding: 1.5rem 1rem !important;
+    margin: 1rem 0 !important;
+  }
+  
+  /* Mobile-friendly grids */
+  .grid-mobile-single {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  /* Hide decorative elements on small screens */
+  .mobile-hidden {
+    display: none !important;
+  }
+  
+  /* Show mobile-only elements */
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+/* ===== TABLET-SPECIFIC OPTIMIZATIONS ===== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet-friendly grids */
+  .grid-tablet-two {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Better tablet spacing */
+  .section-tablet-spacing {
+    padding: 2.5rem 2rem !important;
+  }
+  
+  /* Tablet navigation adjustments */
+  .nav-tablet-spacing {
+    padding: 0.5rem 1.5rem !important;
+  }
+}
+
+/* ===== MOBILE PERFORMANCE OPTIMIZATIONS ===== */
+
+@media (max-width: 767px) {
+  /* Disable expensive effects */
+  .backdrop-blur-xl,
+  .backdrop-blur-2xl {
+    backdrop-filter: blur(8px) !important;
+  }
+  
+  /* Simplify shadows */
+  .shadow-xl,
+  .shadow-2xl {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Optimize transforms */
+  .transform {
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+}
+
+/* ===== MOBILE ACCESSIBILITY ENHANCEMENTS ===== */
+
+@media (max-width: 767px) {
+  /* Better focus indicators */
+  button:focus,
+  a:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: 2px solid #f97316 !important;
+    outline-offset: 2px !important;
+  }
+  
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .glass-card {
+      background: white !important;
+      border: 2px solid #000 !important;
+    }
+    
+    .text-gray-600,
+    .text-gray-700 {
+      color: #000 !important;
+    }
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ===== MOBILE FORM ENHANCEMENTS ===== */
+
+@media (max-width: 767px) {
+  /* Better form layouts */
+  .form-mobile-stack .grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  /* Enhanced input styling */
+  input[type="email"],
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100% !important;
+    padding: 1rem !important;
+    font-size: 16px !important;
+    border-radius: 0.75rem !important;
+    border: 2px solid #e5e7eb !important;
+    transition: border-color 0.2s ease !important;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #f97316 !important;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1) !important;
+  }
+  
+  /* Better button styling */
+  .form-button-mobile {
+    width: 100% !important;
+    padding: 1rem 1.5rem !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    border-radius: 0.75rem !important;
+  }
+}
+
+/* ===== MOBILE NAVIGATION ENHANCEMENTS ===== */
+
+@media (max-width: 767px) {
+  /* Enhanced mobile menu */
+  .mobile-menu-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px) !important;
+    z-index: 50 !important;
+  }
+  
+  .mobile-menu-content {
+    padding: 2rem 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+  }
+  
+  .mobile-menu-item {
+    padding: 1rem 1.5rem !important;
+    margin: 0.5rem 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    border-radius: 0.75rem !important;
+    font-size: 1.125rem !important;
+    font-weight: 500 !important;
+  }
+}
