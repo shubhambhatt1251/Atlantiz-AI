@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Heart, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 
 const Footer = () => {
   return (
