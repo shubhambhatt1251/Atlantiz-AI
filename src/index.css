@@ -20,6 +20,7 @@
 @import './styles/atlantiz-animations.css';
 @import './styles/mobile-optimizations.css';
 @import './styles/mobile-utilities.css';
+@import './styles/mobile-visibility-fixes.css';
 
 @font-face {
   font-family: 'Brockmann';
