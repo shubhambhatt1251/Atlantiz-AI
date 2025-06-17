@@ -17,7 +17,6 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ErrorBoundary from "@/components/ErrorBoundary";
 import MobileOptimizer from "@/components/MobileOptimizer";
-import MobileVisibilityEnhancer from "@/components/MobileVisibilityEnhancer";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
@@ -28,7 +27,6 @@ const App = () => (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <MobileOptimizer>
-          <MobileVisibilityEnhancer />
           <Toaster />
           <Sonner />
           <BrowserRouter>
