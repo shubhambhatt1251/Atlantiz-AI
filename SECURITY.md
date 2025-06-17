@@ -150,7 +150,6 @@ This protection system is designed to:
 ## 📞 **CONTACT INFORMATION**
 
 For licensing inquiries or security concerns:
-- **Email:** contact@atlantizai.com
 - **Creator:** Shubham
 - **Company:** Atlantiz AI
 
