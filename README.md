@@ -263,19 +263,6 @@ Advanced security features protecting your intellectual property:
 - 📚 Comprehensive documentation and code comments
 - 🛠️ Smart development tools and debugging capabilities
 
----
-
-## 📄 **License**
-
-This project is proprietary software owned by **Atlantiz AI** and **Shubham**.
-
-**© 2025 Atlantiz AI - All Rights Reserved**
-
-### **Important Notice**
-- This is **NOT** open source software
-- Unauthorized copying, distribution, or use is strictly prohibited
-- All code is protected by copyright and trade secret laws
-- For licensing inquiries: **shubhambhatt1251@gmail.com**
 
 ---
 
