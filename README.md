@@ -255,7 +255,7 @@ This project is proprietary software owned by **Atlantiz AI** and **Shubham**.
 - Violations will be prosecuted to the full extent of the law
 
 ### **For Licensing Inquiries**
-- **Email**: contact@atlantizai.com
+- **Email**: shubhambhatt1251@gmail.com
 - **Creator**: Shubham
 - **Company**: Atlantiz AI
 
