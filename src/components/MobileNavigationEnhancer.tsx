@@ -77,16 +77,7 @@ const MobileNavigationEnhancer: React.FC = () => {
           : 'bg-white/90 backdrop-blur-sm'
       }`}>
         <div className="flex items-center justify-between px-4 py-3">
-          {/* Logo */}
-          <div 
-            className="flex items-center gap-2 cursor-pointer"
-            onClick={scrollToTop}
-          >
-            <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">A</span>
-            </div>
-            <span className="font-bold text-lg text-gray-900">Atlantiz AI</span>
-          </div>
+          {/* Logo removed */}
 
           {/* Menu Button */}
           <button
