@@ -78,7 +78,6 @@ Experience the full power of Atlantiz AI with:
 - **Purpose Showcase**: Core AI features
 - **Why AI**: Benefits explanation
 - **Interactive Cards**: Hover effects
-- **Video Demo**: Capability showcase
 
 </td>
 <td width="50%">
