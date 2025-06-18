@@ -430,3 +430,8 @@
   backface-visibility: hidden;
   perspective: 1000px;
 }
+
+/* Scroll offset for fixed navbar */
+.scroll-offset-navbar {
+  scroll-margin-top: 100px;
+}
