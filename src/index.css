@@ -21,6 +21,7 @@
 @import './styles/mobile-optimizations.css';
 @import './styles/mobile-utilities.css';
 @import './styles/mobile-layout-system.css';
+@import './styles/mobile-navbar-optimizations.css';
 
 @font-face {
   font-family: 'Brockmann';

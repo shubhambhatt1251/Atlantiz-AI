@@ -1,0 +1,166 @@
+/**
+ * ATLANTIZ AI - Mobile Navbar Optimizations
+ * 🎨 Designed by: Shubham | 👨‍💻 Developed by: Shubham
+ * © 2025 Atlantiz AI - All Rights Reserved
+ * 
+ * Mobile-only optimizations that don't change existing UI
+ * Only applies to mobile devices (max-width: 767px)
+ */
+
+/* ===== MOBILE-ONLY NAVBAR OPTIMIZATIONS ===== */
+
+@media (max-width: 767px) {
+  /* Optimize mobile menu button for better touch targets */
+  .mobile-menu-btn {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    touch-action: manipulation !important;
+  }
+  
+  /* Optimize mobile navigation overlay for better performance */
+  .mobile-nav-overlay {
+    will-change: transform, opacity !important;
+    backface-visibility: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+  }
+  
+  /* Improve mobile navigation links touch targets */
+  .mobile-nav-overlay nav a {
+    min-height: 48px !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: rgba(249, 115, 22, 0.1) !important;
+  }
+  
+  /* Optimize mobile CTA buttons */
+  .mobile-nav-overlay .group {
+    min-height: 52px !important;
+    touch-action: manipulation !important;
+  }
+  
+  /* Prevent iOS zoom on input focus */
+  .mobile-nav-overlay input,
+  .mobile-nav-overlay select,
+  .mobile-nav-overlay textarea {
+    font-size: 16px !important;
+  }
+  
+  /* Improve mobile scrolling performance */
+  .mobile-nav-overlay {
+    -webkit-overflow-scrolling: touch !important;
+    overflow-y: auto !important;
+  }
+  
+  /* Optimize mobile animations for better performance */
+  .mobile-nav-overlay * {
+    transform: translateZ(0) !important;
+    backface-visibility: hidden !important;
+  }
+  
+  /* Better mobile focus indicators */
+  .mobile-menu-btn:focus,
+  .mobile-nav-overlay a:focus {
+    outline: 2px solid #f97316 !important;
+    outline-offset: 2px !important;
+  }
+  
+  /* Optimize mobile backdrop blur for performance */
+  @supports (backdrop-filter: blur(20px)) {
+    .mobile-nav-overlay {
+      backdrop-filter: blur(20px) !important;
+    }
+  }
+  
+  /* Fallback for devices that don't support backdrop-filter */
+  @supports not (backdrop-filter: blur(20px)) {
+    .mobile-nav-overlay {
+      background: rgba(255, 255, 255, 0.98) !important;
+    }
+  }
+}
+
+/* ===== MOBILE PERFORMANCE OPTIMIZATIONS ===== */
+
+@media (max-width: 767px) {
+  /* Reduce motion for better mobile performance */
+  @media (prefers-reduced-motion: reduce) {
+    .mobile-nav-overlay,
+    .mobile-menu-btn {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+  
+  /* Optimize for mobile battery life */
+  .mobile-nav-overlay {
+    contain: layout style paint !important;
+  }
+  
+  /* Better mobile rendering performance */
+  .mobile-nav-overlay nav {
+    contain: layout !important;
+  }
+}
+
+/* ===== MOBILE ACCESSIBILITY ENHANCEMENTS ===== */
+
+@media (max-width: 767px) {
+  /* High contrast mode support */
+  @media (prefers-contrast: high) {
+    .mobile-nav-overlay {
+      background: white !important;
+      border: 2px solid #000 !important;
+    }
+    
+    .mobile-nav-overlay a {
+      color: #000 !important;
+      border: 1px solid #000 !important;
+    }
+  }
+  
+  /* Dark mode optimizations */
+  @media (prefers-color-scheme: dark) {
+    .mobile-nav-overlay {
+      background: rgba(0, 0, 0, 0.95) !important;
+      color: white !important;
+    }
+  }
+}
+
+/* ===== MOBILE TOUCH OPTIMIZATIONS ===== */
+
+@media (max-width: 767px) and (pointer: coarse) {
+  /* Optimize for touch devices */
+  .mobile-menu-btn {
+    padding: 12px !important;
+  }
+  
+  .mobile-nav-overlay a {
+    padding: 16px 24px !important;
+    margin: 4px 0 !important;
+  }
+  
+  /* Better touch feedback */
+  .mobile-nav-overlay a:active {
+    background-color: rgba(249, 115, 22, 0.1) !important;
+    transform: scale(0.98) !important;
+  }
+}
+
+/* ===== MOBILE LOADING OPTIMIZATIONS ===== */
+
+@media (max-width: 767px) {
+  /* Preload critical mobile styles */
+  .mobile-nav-overlay {
+    content-visibility: auto !important;
+    contain-intrinsic-size: 100vh !important;
+  }
+  
+  /* Optimize mobile font loading */
+  .mobile-nav-overlay * {
+    font-display: swap !important;
+  }
+}
